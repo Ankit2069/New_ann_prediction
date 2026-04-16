@@ -50,8 +50,8 @@ The model is trained on customer data and uses:
 Clone the repository:
 
 ```
-git clone https://github.com/Abhi-Sh4rma/Abhi_Ann_Analyze.git
-cd Abhi_Ann_Analyze
+git clone https://github.com/Ankit2069/New_ann_prediction.git
+cd New_ann_prediction
 ```
 
 Install dependencies:
@@ -121,14 +121,6 @@ This app can also be deployed using **Streamlit Community Cloud** for worldwide 
 - See `requirements.txt` for detailed dependencies
 - TensorFlow CPU (or GPU if available)
 
-## 👨‍💻 Author
-
-Enhanced version with modern UI/UX design
-
-**Abhishek Sharma**
-Aspiring Cybersecurity & AI Enthusiast 🔐🤖
-
----
 
 ## ⭐ Support
 
