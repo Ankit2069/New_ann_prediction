@@ -18,12 +18,12 @@ FEATURE_COLUMNS_PATH = ARTIFACTS_DIR / "feature_columns.json"
 # Page config
 st.set_page_config(
     page_title="AI Customer Risk Analyzer",
-    page_icon="🚀",
+    page_icon="",
     layout="wide"
 )
 
 
-# 🎨 Enhanced UI Styling
+# Enhanced UI Styling
 st.markdown(
     """
     <style>
@@ -113,11 +113,11 @@ st.markdown(
 )
 
 
-# 🎯 Hero Section
+# Hero Section
 st.markdown(
     """
     <div class="hero">
-        <h1>� ChurnGuard Pro</h1>
+        <h1>ChurnGuard Pro</h1>
         <p>Advanced customer retention intelligence powered by deep neural networks</p>
     </div>
     """,
@@ -159,30 +159,30 @@ except Exception as error:
     st.stop()
 
 
-# 📊 Input Section
-st.subheader("📥 Enter Customer Details")
+# Input Section
+st.subheader("Customer Details")
 
 with st.form("churn_form"):
     col1, col2 = st.columns(2)
 
     with col1:
-        credit_score = st.number_input("💳 Credit Score", 300, 850, 600)
-        gender = st.selectbox("👤 Gender", ["Female", "Male"])
-        age = st.number_input("🎂 Age", 18, 100, 40)
-        tenure = st.number_input("📅 Tenure", 0, 10, 3)
-        balance = st.number_input("💰 Balance", 0.0, 250000.0, 60000.0)
+        credit_score = st.number_input("Credit Score", 300, 850, 600)
+        gender = st.selectbox("Gender", ["Female", "Male"])
+        age = st.number_input("Age", 18, 100, 40)
+        tenure = st.number_input("Tenure", 0, 10, 3)
+        balance = st.number_input("Account Balance", 0.0, 250000.0, 60000.0)
 
     with col2:
-        num_products = st.number_input("📦 Products", 1, 4, 2)
-        has_cr_card = st.selectbox("💳 Credit Card", ["Yes", "No"])
-        is_active_member = st.selectbox("⚡ Active Member", ["Yes", "No"])
-        estimated_salary = st.number_input("💵 Salary", 0.0, 500000.0, 80000.0)
-        geography = st.selectbox("🌍 Location", ["France", "Germany", "Spain"])
+        num_products = st.number_input("Products", 1, 4, 2)
+        has_cr_card = st.selectbox("Credit Card", ["Yes", "No"])
+        is_active_member = st.selectbox("Active Member", ["Yes", "No"])
+        estimated_salary = st.number_input("Salary", 0.0, 500000.0, 80000.0)
+        geography = st.selectbox("Location", ["France", "Germany", "Spain"])
 
-    submitted = st.form_submit_button("🚀 Analyze Risk")
+    submitted = st.form_submit_button("Analyze ")
 
 
-# 🔮 Prediction Section
+# Prediction Section
 if submitted:
     raw_row = pd.DataFrame(
         [
@@ -209,19 +209,19 @@ if submitted:
     scaled_row = scaler.transform(processed_row)
     churn_probability = float(model.predict(scaled_row, verbose=0)[0][0])
     stay_probability = 1.0 - churn_probability
-    churn_label = "⚠️ HIGH RISK" if churn_probability >= 0.5 else "✅ LOW RISK"
+    churn_label = "HIGH RISK" if churn_probability >= 0.5 else "LOW RISK"
 
     st.markdown('<div class="result-card">', unsafe_allow_html=True)
 
-    st.subheader("📊 Risk Analysis Result")
+    st.subheader("Risk Analysis Result")
 
     col1, col2 = st.columns(2)
 
     with col1:
-        st.metric("⚠️ Churn Risk", f"{churn_probability * 100:.2f}%")
+        st.metric("Churn Risk", f"{churn_probability * 100:.2f}%")
 
     with col2:
-        st.metric("✅ Retention Chance", f"{stay_probability * 100:.2f}%")
+        st.metric("Retention Chance", f"{stay_probability * 100:.2f}%")
 
     st.write(f"### Final Decision: {churn_label}")
 

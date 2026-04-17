@@ -1,24 +1,24 @@
-# � ChurnGuard Pro
+# ChurnGuard Pro
 
 An advanced **Machine Learning web application** that intelligently predicts customer churn risk using a sophisticated Artificial Neural Network (ANN). Features a modern dark-themed interface with gradient effects and real-time predictions.
 
-🔗 Built with Streamlit | TensorFlow | Scikit-learn | Modern UI/UX
+Built with Streamlit | TensorFlow | Scikit-learn | Modern UI/UX
 
 ---
 
-## 📊 Features
+## Features
 
-* � **ChurnGuard Pro** - Advanced customer retention intelligence system
-* 🔮 Predict customer churn probability with high accuracy
-* 📈 Displays risk percentage (Churn vs Retention) with visual progress indicator
-* 🎯 Modern dark-themed dashboard with gradient UI elements
-* ✨ Enhanced typography using Poppins and Inter fonts
-* ⚡ Real-time predictions using trained deep neural network
-* 🌈 Beautiful purple-to-magenta color scheme
+* **ChurnGuard Pro** - Advanced customer retention intelligence system
+* Predict customer churn probability with high accuracy
+* Displays risk percentage (Churn vs Retention) with visual progress indicator
+* Modern dark-themed dashboard with gradient UI elements
+* Enhanced typography using Poppins and Inter fonts
+* Real-time predictions using trained deep neural network
+* Beautiful purple-to-magenta color scheme
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 The model is trained on customer data and uses:
 
@@ -29,7 +29,7 @@ The model is trained on customer data and uses:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -45,7 +45,7 @@ The model is trained on customer data and uses:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 Clone the repository:
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧪 Train the Model (Optional)
+## Train the Model (Optional)
 
 If you want to retrain the model:
 
@@ -72,7 +72,7 @@ If you want to retrain the model:
 
 ---
 
-## ▶️ Run the App Locally
+## Run the App Locally
 
 ```
 streamlit run app.py
@@ -80,7 +80,7 @@ streamlit run app.py
 
 ---
 
-## 🌍 Deployment
+## Deployment
 
 You can run this app locally on your machine:
 
@@ -95,17 +95,17 @@ This app can also be deployed using **Streamlit Community Cloud** for worldwide 
 
 ---
 
-## 📌 Notes
+## Notes
 
 * Model predicts churn probability based on comprehensive customer data
 * **Churn Risk Threshold:**
-  * ≥ 50% → 🔴 **High Risk** (Red-pink indicator)
-  * < 50% → 🟢 **Low Risk** (Retained customer)
+  * ≥ 50% → **High Risk** (Red-pink indicator)
+  * < 50% → **Low Risk** (Retained customer)
 * Ensure all artifacts exist in `/artifacts` directory before running
 * The app features a dark gradient background for a modern aesthetic
 * Supports customer inputs: Credit Score, Age, Balance, Salary, Tenure, Products, Card Status, Activity Status, Location, and Gender
 
-## 🎨 UI/UX Updates
+## UI/UX Updates
 
 * **Dark Theme:** Deep blue-purple gradient background
 * **Typography:** Premium fonts (Poppins & Inter) for better readability
@@ -115,13 +115,21 @@ This app can also be deployed using **Streamlit Community Cloud** for worldwide 
 
 ---
 
-## � Requirements
+## Requirements
 
 - Python 3.8+
 - See `requirements.txt` for detailed dependencies
 - TensorFlow CPU (or GPU if available)
 
+## Author
 
-## ⭐ Support
+Enhanced version with modern UI/UX design
 
-If you like this project, give it a ⭐ on GitHub!
+**Abhishek Sharma**
+Aspiring Cybersecurity & AI Enthusiast
+
+---
+
+## Support
+
+If you like this project, give it a star on GitHub!
