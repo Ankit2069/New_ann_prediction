@@ -121,12 +121,6 @@ This app can also be deployed using **Streamlit Community Cloud** for worldwide 
 - See `requirements.txt` for detailed dependencies
 - TensorFlow CPU (or GPU if available)
 
-## Author
-
-Enhanced version with modern UI/UX design
-
-**Abhishek Sharma**
-Aspiring Cybersecurity & AI Enthusiast
 
 ---
 
