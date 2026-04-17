@@ -88,7 +88,7 @@ You can run this app locally on your machine:
 streamlit run app.py
 ```
 
-The app will be available at `http://localhost:8503`
+The app will be available at `https://newannprediction-asujtvwdjem5aqhg74oatg.streamlit.app`
 
 ### Optional: Streamlit Community Cloud
 This app can also be deployed using **Streamlit Community Cloud** for worldwide access.
